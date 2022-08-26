@@ -1,0 +1,16 @@
+name: "Infra CI/CD"
+
+on:
+  push:
+    paths:
+      - "infrastructure/**"
+
+jobs:
+  infrastructure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Infrastructure CI/CD
+        run: |-
+          echo "Hello World from Infrastructure CI/CD"

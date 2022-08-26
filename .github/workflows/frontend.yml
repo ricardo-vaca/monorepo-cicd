@@ -1,0 +1,16 @@
+name: "Frontend CI/CD"
+
+on:
+  push:
+    paths:
+      - "frontend/**"
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Frontend CI/CD
+        run: |-
+          echo "Hello World from Frontend CI/CD"
